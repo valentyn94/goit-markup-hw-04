@@ -2,6 +2,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css");
 
 /* ===== Base styles ===== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -60,6 +64,7 @@ a {
   height: 56px;
   border: none;
   border-radius: 4px;
+  transition: 0.3s;
 }
 
 .hero-button:hover,
@@ -162,6 +167,7 @@ a {
   letter-spacing: 0.02em;
   padding: 24px 0;
   display: block;
+  transition: 0.3s;
 }
 
 .nav-link:hover,
@@ -188,10 +194,12 @@ a {
 
 /* ===== Hero Section ===== */
 .hero-section {
-  background: #2e2f42;
-  padding-bottom: 188px;
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("/images/people-office%201-min.jpg") center/cover no-repeat;
   padding-top: 188px;
+  padding-bottom: 188px;
   text-align: center;
+  color: white;
 }
 
 .hero-section .container {
@@ -355,6 +363,15 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin: 0 auto;
+}
+
+.portfolio-item-text {
+  position: absolute;
+  top: 0;
+}
+
+.portfolio-image-cover {
+  position: relative;
 }
 
 /* ===== Footer ===== */
