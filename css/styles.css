@@ -289,6 +289,36 @@ a {
 }
 
 /* ===== Team Section ===== */
+.strategy-contacts-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.strategy-contacts-item {
+  width: 40px;
+  height: 40px;
+}
+
+.strategy-contacts-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.strategy-contacts-link:hover,
+.strategy-contacts-link:focus {
+  background-color: #404bbf;
+  background-color: #404bbf;
+}
+
+.icon-class {
+  fill: #f4f4fd;
+}
+
 .team-section {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -319,6 +349,8 @@ a {
 .team-card {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-card-name {
