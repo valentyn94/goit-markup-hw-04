@@ -64,7 +64,7 @@ a {
   height: 56px;
   border: none;
   border-radius: 4px;
-  transition: 0.3s;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -112,10 +112,11 @@ a {
 
 .header-box {
   background-color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: flex-end;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo-header {
@@ -167,7 +168,19 @@ a {
   letter-spacing: 0.02em;
   padding: 24px 0;
   display: block;
-  transition: 0.3s;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+
+  ::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+  }
 }
 
 .nav-link:hover,
@@ -182,6 +195,7 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list {
@@ -195,11 +209,15 @@ a {
 /* ===== Hero Section ===== */
 .hero-section {
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("/images/people-office%201-min.jpg") center/cover no-repeat;
+    url("/images/people-office%201-min.jpg");
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
   color: white;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-section .container {
